@@ -27,6 +27,10 @@ namespace lab2V1
 			{
 				app.UseDeveloperExceptionPage();
 			}
+
+			app.UseDefaultFiles();
+			app.UseStaticFiles();
+
 			app.UseRouting();
 			app.UseEndpoints(endpoints =>
 			{
