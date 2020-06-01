@@ -11,7 +11,7 @@ namespace lab2V1.Models
 		public virtual DbSet<Order> Orders { get; set; }
 		public virtual DbSet<Phylum> Phylumes { get; set; }
 		public virtual DbSet<Species> Specieses { get; set; }
-	
+		public Lab2LibraryContext() { }
 		public Lab2LibraryContext(DbContextOptions<Lab2LibraryContext> options):base(options)
 		{
 			Database.EnsureCreated();

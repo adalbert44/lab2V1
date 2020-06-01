@@ -132,7 +132,7 @@ namespace lab2V1.Controllers
             return kingdom;
         }
 
-        private bool KingdomExists(int id)
+        public bool KingdomExists(int id)
         {
             return _context.Kingdoms.Any(e => e.Id == id);
         }
